@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* App.css */
+.app {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #282c34;
+  min-height: 100vh;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.stock-info-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+  padding: 0 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.stock-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 5px;
+}
+
+.stock-info .name {
+  color: #8c8c8c;
+}
+
+.stock-info .price-info {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.stock-info .price {
+  color: #262626;
+  font-size: 30px;
+}
+
+.stock-info .stat.negative {
+  color: #ff0000;
+}
+
+.stock-info .stat.positive {
+  color: #52c41a;
 }
