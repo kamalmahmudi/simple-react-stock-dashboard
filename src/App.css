@@ -7,11 +7,3 @@
   min-height: 100vh;
   color: white;
 }
-
-.stock-info-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 800px;
-  padding: 0 5px;
-}
