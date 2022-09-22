@@ -15,38 +15,3 @@
   width: 800px;
   padding: 0 5px;
 }
-
-.stock-info {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  font-size: 14px;
-  padding: 10px;
-  border-radius: 10px;
-  margin: 0 5px;
-}
-
-.stock-info .name {
-  color: #8c8c8c;
-}
-
-.stock-info .price-info {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  justify-content: space-between;
-}
-
-.stock-info .price {
-  color: #262626;
-  font-size: 30px;
-}
-
-.stock-info .stat.negative {
-  color: #ff0000;
-}
-
-.stock-info .stat.positive {
-  color: #52c41a;
-}
