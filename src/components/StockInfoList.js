@@ -14,8 +14,8 @@ function StockInfoList({ stockNames = [] }) {
   const updateStocks = useCallback(async () => {
     const newStocks = [];
     for (const stockName of stockNames) {
-      const newStock = await fetchStockInfo(stockName)
-      newStocks.push(newStock)
+      const newStock = await fetchStockInfo(stockName);
+      newStocks.push(newStock);
     }
     setStocks(newStocks)
   }, [stockNames])
